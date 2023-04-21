@@ -1,6 +1,8 @@
-# Gruvhugo
+# Gruvhugo Fork
 [![pipeline status](https://gitlab.com/avron/gruvhugo/badges/master/pipeline.svg)](https://gitlab.com/avron/gruvhugo/-/commits/master)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+## **This is a fork of Gruvhugo (hugo) theme built by [Abraham Raji alias avron](https://gitlab.com/avron/gruvhugo).  s/o to him**
 
 This is a minmal theme based on the [Gruvbox](https://github.com/morhetz/gruvbox) color scheme by [Pavel Pertsev](https://github.com/morhetz/)
 
