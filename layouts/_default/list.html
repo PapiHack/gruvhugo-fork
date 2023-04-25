@@ -1,4 +1,5 @@
 {{define "main"}}
+
 <br>
 	<div style="display:flex;align-items:center;">
 		<a class="go-back" href="{{ .Site.BaseURL }}"><svg aria-hidden="true" focusable="false" data-prefix="far" class="back-icon" data-icon="caret-square-left" height="25px" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M272 157.1v197.8c0 10.7-13 16.1-20.5 8.5l-98.3-98.9c-4.7-4.7-4.7-12.2 0-16.9l98.3-98.9c7.5-7.7 20.5-2.3 20.5 8.4zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5
@@ -12,7 +13,7 @@
             <span><a style="color: white; text-decoration: none;" href='{{ "tags/" | absURL }}{{ $value.Name | lower }}'>{{ $value.Name }} ({{.Count }})</a></span>
           {{end}}
         {{else}}
-          {{ range .Pages}}
+          {{ range .Paginator.Pages}}
             <div class="post-item">
               {{if eq .Section "post"}}
                 <well class="well">
@@ -30,6 +31,7 @@
                 </well>
                 {{end}}            
             </div><br>
-          {{end}}
+            {{end}}
+            {{ template "_internal/pagination.html" . }}
         {{end}}
 {{end}}
